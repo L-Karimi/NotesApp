@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddNoteActivity">
+
+
+    <TextView
+        android:id="@+id/addNotHEADING"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Add Note"
+        android:textColor="@color/orange"
+
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/addNotHEADING"
+        android:layout_marginEnd="6dp"
+        />
+
+    <EditText
+        android:id="@+id/tittleEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:hint="Enter the tittle"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:maxLines="1"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/addNotHEADING"
+        android:textSize="12sp"
+        android:padding="12dp"
+        android:inputType="text"
+         />
+
+
+
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter the description"
+android:gravity="top"
+        android:fontFamily="@font/poppins"
+        android:maxLines="1"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tittleEditText"
+        android:textSize="18sp"
+        android:background="@drawable/orange_border"
+        android:padding="12dp"
+        android:inputType="text"
+        />
+</RelativeLayout>
